@@ -1,0 +1,8 @@
+dotnet new xunit -n sparkAPI.Test
+dotnet new sln --name sparkAPIsln
+dotnet sln sparkAPIsln.sln add sparkAPI/sparkAPI.csproj test/sparkAPI.Test/sparkAPI.Test.csproj
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/sunil9119/CICD.git
+git push -u origin master
